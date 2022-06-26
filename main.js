@@ -1,3 +1,5 @@
+
+// start nav bar drop menu open and close function
 const navItems = document.querySelector('#nav_items');
 const openNavBtn = document.querySelector('#open__nav-btn');
 const closeNavBtn = document.querySelector('#close__nav-btn');
@@ -13,6 +15,5 @@ const closeNav = () =>{
     closeNavBtn.style.display = 'none';
     openNavBtn.style.display = 'inline-block';
 }
-
-
 closeNavBtn.addEventListener('click', closeNav);
+// end nav bar open adn close function
