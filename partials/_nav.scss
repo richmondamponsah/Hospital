@@ -1,4 +1,5 @@
 nav {
+    
     width: 100vw;
     height: 5rem;
     position: fixed;
@@ -7,6 +8,32 @@ nav {
     place-items: center;
     @include gradientBackground();
     box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
+
+    // navbar style on scroll using js
+    &.window-scroll{
+        background: $white-color;
+        .container{
+            button{
+                color: $black-color;
+            }
+
+            a{
+                color: $black-color;
+            }
+            .nav_logo{
+
+                h3{
+                    color: $black-color;
+                }
+                
+
+            }
+            .btn{
+                color: $white-color;
+            }
+        }
+    }
+    // -end
 
     .container {
        

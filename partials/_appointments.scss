@@ -1,0 +1,115 @@
+#appointment{
+    margin-bottom: 6rem;
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .left__container{
+
+
+            .appointment__list{
+                padding-top: 2rem;
+                
+                li{
+                    display: flex;
+                    gap: 2rem;
+                    padding: 1rem 0;
+                    
+                    
+
+                    i{
+                        height: fit-content;
+                        display:flex;
+                        padding: 0.8rem;
+                        border-radius: 50%;
+                       background: $secondary-color;
+                       color: $white-color;
+                       font-size: 1.5rem;
+                      
+                      
+                 
+                        
+                       
+                       
+                    }
+
+                    .list__items{
+                        align-items: center;
+                        
+                        h2{
+                            margin-bottom: 0.4rem;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+
+            .form__group{
+                label{
+                    font-size: 0.85rem;
+                    margin-bottom: 0.4rem;
+                    display: inline-block;
+                    font-weight: 600;
+                }
+                input,
+                textarea,
+                select{
+                    background: $white-color;
+                    padding: 0.85rem 1rem;
+                    display: block;
+                    width: 100%;
+                    border-radius: 0.4rem;
+                    resize: none;
+                    appearance: none;
+
+
+                }
+               
+            }
+             .btn-primary{
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+        }
+    }
+}
+
+/*------------------- Media queries (medium device) -----------------------*/
+
+@media screen and (max-width: 1024px){
+   #appointment{
+    .container{
+        gap: 2rem;
+    }
+   }
+
+}
+
+/*------------------- Media queries (small device) -----------------------*/
+
+@media screen and (max-width: 600px){
+    #appointment{
+        .container{
+            grid-template-columns: 1fr;
+
+            .left__container{
+                h2,
+                p{
+                    text-align: center;
+                }
+            }
+        }
+
+       }
+       
+
+
+}
