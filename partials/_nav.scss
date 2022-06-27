@@ -70,6 +70,19 @@ nav {
 
   @media screen and (max-width: 1024px){
     nav {
+        // navbar style on scroll using js
+    &.window-scroll{
+       
+        .container{
+            
+
+            a{
+                color: $white-color;
+            }
+            
+        }
+    }
+    // -end
         .container {
             button {
                 display: inline-block;
